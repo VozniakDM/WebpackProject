@@ -18,7 +18,6 @@ module.exports = {
     new HTMLWebpackPlugin( {
       template: "./index.html"
     }),
-    new CleanWebpackPlugin(),
     new CompressionPlugin(),
     new CopyPlugin({
       patterns: [
@@ -26,6 +25,7 @@ module.exports = {
         { from: "other", to: "public" },
       ],
     }),
+    new CleanWebpackPlugin(),
   ],
   devServer: {
     port: 4200,
