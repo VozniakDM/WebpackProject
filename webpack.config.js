@@ -19,12 +19,6 @@ module.exports = {
       template: "./index.html"
     }),
     new CompressionPlugin(),
-    new CopyPlugin({
-      patterns: [
-        { from: "source", to: "dest" },
-        { from: "other", to: "public" },
-      ],
-    }),
     new CleanWebpackPlugin(),
   ],
   devServer: {
